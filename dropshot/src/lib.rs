@@ -546,7 +546,7 @@
  */
 #![allow(clippy::style)]
 /*
- * The `usdt` crate requires nightly, enabled if our consumer is enabling
+ * The `usdt` crate may requre nightly, enabled if our consumer is enabling
  * DTrace probes.
  */
 #![cfg_attr(all(feature = "usdt-probes", not(usdt_stable_asm)), feature(asm))]
